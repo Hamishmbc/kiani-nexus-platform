@@ -21,7 +21,9 @@ const Index = () => {
       icon: Shield,
       url: "https://www.inheritancemadesimple.com/",
       gradient: "from-emerald-500 to-teal-600",
-      delay: "100ms"
+      delay: "100ms",
+      logo: "/lovable-uploads/1af090b8-6bec-4e11-9932-0221d16d6fe2.png",
+      logoAlt: "Inheritance Made Simple logo"
     },
     {
       title: "Insolvency Solutions",
@@ -29,7 +31,9 @@ const Index = () => {
       icon: FileText,
       url: "https://www.bankruptcy.co.uk/",
       gradient: "from-orange-500 to-red-500",
-      delay: "200ms"
+      delay: "200ms",
+      logo: "/lovable-uploads/217fea7e-8a17-4a1b-851c-8398fe875a9a.png",
+      logoAlt: "Bankruptcy.co.uk logo"
     },
     {
       title: "AI Integration",
@@ -37,7 +41,9 @@ const Index = () => {
       icon: Brain,
       url: "https://www.sumlii.com",
       gradient: "from-purple-500 to-pink-500",
-      delay: "300ms"
+      delay: "300ms",
+      logo: "/lovable-uploads/d833d486-4f8d-4357-b5e1-9b271c3ddd8b.png",
+      logoAlt: "Sumlii logo"
     }
   ];
 
@@ -63,6 +69,41 @@ const Index = () => {
               <ServiceCard key={index} {...service} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* About Sean Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <Card className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-600 backdrop-blur-lg">
+            <CardContent className="p-12">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/lovable-uploads/eacd3396-5ff8-4c31-ac3c-af03007958f8.png" 
+                    alt="Sean Kiani" 
+                    className="w-32 h-32 rounded-full object-cover border-4 border-blue-500/30"
+                  />
+                </div>
+                <div className="text-center md:text-left">
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Meet Sean Kiani
+                  </h3>
+                  <p className="text-xl text-slate-300 mb-6 leading-relaxed">
+                    FCA regulated financial advisor with extensive experience in wealth management, estate planning, and innovative AI-powered financial solutions.
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                    onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
+                  >
+                    Learn More About Sean
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

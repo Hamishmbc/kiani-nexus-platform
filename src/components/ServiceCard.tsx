@@ -10,9 +10,11 @@ interface ServiceCardProps {
   url: string;
   gradient: string;
   delay: string;
+  logo?: string;
+  logoAlt?: string;
 }
 
-const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, logo, logoAlt }: ServiceCardProps) => {
   const handleClick = () => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -27,9 +29,18 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay }: S
         {/* Background Gradient Effect */}
         <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
         
-        {/* Icon */}
-        <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${gradient} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}>
-          <Icon className="w-full h-full text-white" />
+        {/* Icon or Logo */}
+        <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${gradient} p-4 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center`}>
+          {logo ? (
+            <img 
+              src={logo} 
+              alt={logoAlt || title} 
+              className="w-full h-full object-contain"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+          ) : (
+            <Icon className="w-full h-full text-white" />
+          )}
         </div>
 
         {/* Content */}

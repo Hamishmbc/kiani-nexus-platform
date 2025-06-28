@@ -4,8 +4,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+  
   const services = [
     {
       title: "Financial Advisory & Wealth Management",
@@ -80,7 +83,7 @@ const Index = () => {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-shrink-0">
                   <img 
-                    src="/lovable-uploads/eacd3396-5ff8-4c31-ac3c-af03007958f8.png" 
+                    src="/lovable-uploads/77d9eb5c-9ccd-4aaf-8e8f-2b2aa26c4777.png" 
                     alt="Sean Kiani" 
                     className="w-32 h-32 rounded-full object-cover border-4 border-blue-500/30"
                   />
@@ -90,12 +93,12 @@ const Index = () => {
                     Meet Sean Kiani
                   </h3>
                   <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    FCA regulated financial advisor with extensive experience in wealth management, estate planning, and innovative AI-powered financial solutions.
+                    FCA regulated financial advisor with extensive experience in wealth management, estate planning, insolvency, and innovative AI financial integration.
                   </p>
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                    onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
+                    onClick={() => navigate("/sean")}
                   >
                     Learn More About Sean
                     <ArrowRight className="ml-2 h-5 w-5" />

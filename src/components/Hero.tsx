@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
@@ -29,8 +28,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Your complete financial ecosystem. From regulated advisory services to AI-powered solutions, 
-          we deliver holistic financial strategies that evolve with your ambitions.
+          Your comprehensive financial ecosystem, integrating FCA-regulated financial and wealth management services, estate planning, and insolvency solutions, all fully AI-powered.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

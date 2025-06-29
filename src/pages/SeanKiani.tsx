@@ -23,11 +23,20 @@ const SeanKiani = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section with Peregrine & Black Branding */}
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Card className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-600 backdrop-blur-lg">
+          <Card className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 border-slate-600 backdrop-blur-lg">
             <CardContent className="p-12">
+              {/* Peregrine & Black Logo Header */}
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
+                  alt="Peregrine & Black Investment Management" 
+                  className="h-12 w-auto object-contain opacity-90"
+                />
+              </div>
+              
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex-shrink-0">
                   <img 
@@ -106,8 +115,8 @@ const SeanKiani = () => {
               </CardContent>
             </Card>
 
-            {/* CTA Section */}
-            <Card className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-blue-500/30 backdrop-blur-lg">
+            {/* CTA Section with Better Contrast */}
+            <Card className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 border-slate-600 backdrop-blur-lg">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Ready to Secure Your Financial Future?
@@ -118,7 +127,7 @@ const SeanKiani = () => {
                 <Button 
                   size="lg"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                  onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
+                  onClick={() => navigate("/contact")}
                 >
                   Get Started Today
                   <ArrowRight className="ml-2 h-5 w-5" />

@@ -9,8 +9,8 @@ const SeanKiani = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Header */}
-      <header className="py-8 px-4">
+      {/* Header with Logo */}
+      <header className="py-8 px-4 relative">
         <div className="container mx-auto max-w-6xl">
           <Button 
             variant="ghost" 
@@ -20,23 +20,24 @@ const SeanKiani = () => {
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Button>
+          
+          {/* Large Peregrine & Black Logo in Top Right */}
+          <div className="absolute top-8 right-8">
+            <img 
+              src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
+              alt="Peregrine & Black Investment Management" 
+              className="h-20 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
+              onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
+            />
+          </div>
         </div>
       </header>
 
-      {/* Hero Section with Peregrine & Black Branding */}
+      {/* Hero Section */}
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <Card className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 border-slate-600 backdrop-blur-lg">
             <CardContent className="p-12">
-              {/* Peregrine & Black Logo Header */}
-              <div className="flex justify-center mb-8">
-                <img 
-                  src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
-                  alt="Peregrine & Black Investment Management" 
-                  className="h-12 w-auto object-contain opacity-90"
-                />
-              </div>
-              
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex-shrink-0">
                   <img 

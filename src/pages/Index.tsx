@@ -62,9 +62,17 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Our Services
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Comprehensive financial solutions powered by expertise, regulation, and cutting-edge AI technology
             </p>
+            <Button 
+              size="lg"
+              className="bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              onClick={() => navigate("/services")}
+            >
+              Explore Our Services
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -83,7 +91,7 @@ const Index = () => {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-shrink-0">
                   <img 
-                    src="/lovable-uploads/77d9eb5c-9ccd-4aaf-8e8f-2b2aa26c4777.png" 
+                    src="/lovable-uploads/eab295ab-c413-4338-86fa-813a7d1e7709.png" 
                     alt="Sean Kiani" 
                     className="w-32 h-32 rounded-full object-cover border-4 border-blue-500/30"
                   />

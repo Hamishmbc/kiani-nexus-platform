@@ -9,6 +9,21 @@ import { useNavigate } from "react-router-dom";
 const Index = () => {
   const navigate = useNavigate();
   
+  const handleNavigateToServices = () => {
+    navigate("/services");
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  };
+
+  const handleNavigateToSean = () => {
+    navigate("/sean");
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  };
+
+  const handleNavigateToContact = () => {
+    navigate("/contact");
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  };
+  
   const services = [
     {
       title: "Financial Advisory & Wealth Management",
@@ -68,7 +83,7 @@ const Index = () => {
             <Button 
               size="lg"
               className="bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-              onClick={() => navigate("/services")}
+              onClick={handleNavigateToServices}
             >
               Explore Our Services
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -106,7 +121,7 @@ const Index = () => {
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                    onClick={() => navigate("/sean")}
+                    onClick={handleNavigateToSean}
                   >
                     Learn More About Sean
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -132,7 +147,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                onClick={() => navigate("/contact")}
+                onClick={handleNavigateToContact}
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />

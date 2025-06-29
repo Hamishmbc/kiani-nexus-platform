@@ -1,6 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -31,24 +30,6 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
           Your comprehensive financial ecosystem, integrating independent financial and wealth management services, estate planning, and insolvency solutions, all fully AI-powered.
         </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl"
-          >
-            Explore Our Services
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white px-8 py-4 text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
-          >
-            Learn More
-          </Button>
-        </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">

@@ -1,4 +1,3 @@
-
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,6 +5,21 @@ import { useNavigate } from "react-router-dom";
 
 const Services = () => {
   const navigate = useNavigate();
+
+  const handleNavigateToSean = () => {
+    navigate("/sean");
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  };
+
+  const handleNavigateToContact = () => {
+    navigate("/contact");
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  };
+
+  const handleNavigateToHome = () => {
+    navigate("/");
+    setTimeout(() => window.scrollTo(0, 0), 100);
+  };
 
   const services = [
     {
@@ -50,7 +64,7 @@ const Services = () => {
           <Button 
             variant="ghost" 
             className="text-slate-300 hover:text-white mb-4"
-            onClick={() => navigate("/")}
+            onClick={handleNavigateToHome}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
@@ -142,7 +156,7 @@ const Services = () => {
                     <Button 
                       size="lg"
                       className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                      onClick={() => navigate("/sean")}
+                      onClick={handleNavigateToSean}
                     >
                       Learn More About Sean
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -151,7 +165,7 @@ const Services = () => {
                       size="lg"
                       variant="outline"
                       className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                      onClick={() => navigate("/contact")}
+                      onClick={handleNavigateToContact}
                     >
                       Get Started Today
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -178,7 +192,7 @@ const Services = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white px-12 py-4 text-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl"
-                onClick={() => navigate("/contact")}
+                onClick={handleNavigateToContact}
               >
                 Start Your Journey
                 <ArrowRight className="ml-3 h-6 w-6" />

@@ -12,7 +12,7 @@ const Index = () => {
   const services = [
     {
       title: "Financial Advisory & Wealth Management",
-      description: "FCA regulated financial advice and comprehensive wealth management solutions through Sean Kiani of Peregrine and Black.",
+      description: "Independent financial advice and comprehensive wealth management solutions through Sean Kiani of Peregrine and Black.",
       icon: TrendingUp,
       url: "https://www.peregrineblack.com/",
       gradient: "from-blue-600 to-purple-600",
@@ -101,7 +101,7 @@ const Index = () => {
                     Meet Sean Kiani
                   </h3>
                   <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    FCA regulated financial advisor with extensive experience in wealth management, estate planning, insolvency, and innovative AI financial integration.
+                    Independent financial advisor with extensive experience in wealth management, estate planning, insolvency, and innovative AI financial integration.
                   </p>
                   <Button 
                     size="lg" 

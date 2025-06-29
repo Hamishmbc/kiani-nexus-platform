@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
@@ -28,7 +29,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Your comprehensive financial ecosystem, integrating FCA-regulated financial and wealth management services, estate planning, and insolvency solutions, all fully AI-powered.
+          Your comprehensive financial ecosystem, integrating independent financial and wealth management services, estate planning, and insolvency solutions, all fully AI-powered.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -51,8 +52,8 @@ const Hero = () => {
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">
-            <div className="text-3xl md:text-4xl font-bold text-white">FCA</div>
-            <div className="text-slate-400 text-sm">Regulated</div>
+            <div className="text-3xl md:text-4xl font-bold text-white">Independent</div>
+            <div className="text-slate-400 text-sm">Advice</div>
           </div>
           <div className="space-y-2">
             <div className="text-3xl md:text-4xl font-bold text-white">AI</div>

@@ -9,7 +9,7 @@ const Services = () => {
 
   const services = [
     {
-      logo: "/lovable-uploads/fd2b415c-c60e-4cd1-b52a-f623ffa3baab.png",
+      logo: "/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png",
       title: "Peregrine & Black",
       subtitle: "Investment Management",
       description: "Independent financial advice with institutional-grade investment solutions. Comprehensive wealth management, pension planning, and investment strategies tailored to secure your financial future with clarity and expertise.",
@@ -17,7 +17,7 @@ const Services = () => {
       gradient: "from-slate-700 to-slate-800"
     },
     {
-      logo: "/lovable-uploads/0ac5d22e-6e6c-42df-93f9-72a0523328a2.png",
+      logo: "/lovable-uploads/1af090b8-6bec-4e11-9932-0221d16d6fe2.png",
       title: "Inheritance Made Simple",
       subtitle: "Estate Planning Solutions",
       description: "Comprehensive estate planning services designed to protect your legacy and ensure seamless wealth transfer. Expert guidance through complex inheritance matters with innovative, tax-efficient strategies.",
@@ -25,7 +25,7 @@ const Services = () => {
       gradient: "from-orange-500 to-orange-600"
     },
     {
-      logo: "/lovable-uploads/ebc7fd1f-a6b4-4635-96a0-ed50929097d9.png",
+      logo: "/lovable-uploads/217fea7e-8a17-4a1b-851c-8398fe875a9a.png",
       title: "Bankruptcy.co.uk",
       subtitle: "Positive Insolvency Solutions",
       description: "Expert insolvency and bankruptcy solutions providing positive pathways forward through challenging financial situations. Professional guidance with dignity, clarity, and practical solutions for financial recovery.",
@@ -33,7 +33,7 @@ const Services = () => {
       gradient: "from-slate-600 to-slate-700"
     },
     {
-      logo: "/lovable-uploads/c3bbbc35-c8b6-4216-9f88-b2a5577f625c.png",
+      logo: "/lovable-uploads/d833d486-4f8d-4357-b5e1-9b271c3ddd8b.png",
       title: "Sumlii",
       subtitle: "AI Integration Solutions",
       description: "Cutting-edge AI integration services that transform and optimize your financial processes. Advanced technology solutions that enhance decision-making and streamline operations for the modern financial landscape.",

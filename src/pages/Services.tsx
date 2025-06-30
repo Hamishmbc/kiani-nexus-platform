@@ -1,3 +1,4 @@
+
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ const Services = () => {
 
   const services = [
     {
-      logo: "/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png",
+      logo: "/lovable-uploads/7bc27a07-dc44-41d5-a4e8-32def761b5c6.png",
       title: "Peregrine & Black",
       subtitle: "Investment Management",
       description: "Independent financial advice with institutional-grade investment solutions. Comprehensive wealth management, pension planning, and investment strategies tailored to secure your financial future with clarity and expertise.",
@@ -31,7 +32,7 @@ const Services = () => {
       gradient: "from-slate-700 to-slate-800"
     },
     {
-      logo: "/lovable-uploads/1af090b8-6bec-4e11-9932-0221d16d6fe2.png",
+      logo: "/lovable-uploads/8de56c06-de85-402a-8be4-4b2e0bf1ec13.png",
       title: "Inheritance Made Simple",
       subtitle: "Estate Planning Solutions",
       description: "Comprehensive estate planning services designed to protect your legacy and ensure seamless wealth transfer. Expert guidance through complex inheritance matters with innovative, tax-efficient strategies.",
@@ -39,7 +40,7 @@ const Services = () => {
       gradient: "from-orange-500 to-orange-600"
     },
     {
-      logo: "/lovable-uploads/217fea7e-8a17-4a1b-851c-8398fe875a9a.png",
+      logo: "/lovable-uploads/71512c61-68d4-4ec3-b3f6-1ada677dfb0f.png",
       title: "Bankruptcy.co.uk",
       subtitle: "Positive Insolvency Solutions",
       description: "Expert insolvency and bankruptcy solutions providing positive pathways forward through challenging financial situations. Professional guidance with dignity, clarity, and practical solutions for financial recovery.",
@@ -47,7 +48,7 @@ const Services = () => {
       gradient: "from-slate-600 to-slate-700"
     },
     {
-      logo: "/lovable-uploads/d833d486-4f8d-4357-b5e1-9b271c3ddd8b.png",
+      logo: "/lovable-uploads/2428bbc4-b834-4ed1-a57e-e03dea2fef71.png",
       title: "Sumlii",
       subtitle: "AI Integration Solutions",
       description: "Cutting-edge AI integration services that transform and optimize your financial processes. Advanced technology solutions that enhance decision-making and streamline operations for the modern financial landscape.",
@@ -99,11 +100,11 @@ const Services = () => {
                 <CardContent className="p-8">
                   <div className="flex flex-col items-center text-center">
                     {/* Logo Container */}
-                    <div className="mb-6 p-4 rounded-full bg-white/10 backdrop-blur-sm">
+                    <div className="mb-6 p-6 rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg flex items-center justify-center min-h-[120px] w-full max-w-[280px]">
                       <img 
                         src={service.logo} 
                         alt={service.title}
-                        className="h-16 w-auto object-contain"
+                        className="max-h-16 max-w-full object-contain"
                       />
                     </div>
                     

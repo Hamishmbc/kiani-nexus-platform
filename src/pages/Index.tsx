@@ -31,7 +31,9 @@ const Index = () => {
       icon: TrendingUp,
       url: "https://www.peregrineblack.com/",
       gradient: "from-blue-600 to-purple-600",
-      delay: "0ms"
+      delay: "0ms",
+      logo: "/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png",
+      logoAlt: "Peregrine & Black logo"
     },
     {
       title: "Estate Planning",

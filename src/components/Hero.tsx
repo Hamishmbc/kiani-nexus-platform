@@ -21,14 +21,14 @@ const Hero = () => {
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent font-light tracking-tight">
-            Kiani
+            Sean
           </span>
           <br />
-          <span className="text-white font-normal">Financial</span>
+          <span className="text-white font-normal">Kiani</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Your comprehensive financial ecosystem, integrating independent financial and wealth management services, estate planning, and insolvency solutions, all fully AI-powered.
+          At Sean Kiani, we empower individuals and company directors with tailored financial solutions. As an independent financial adviser, we provide expert wealth management through Peregrine and Black in Mayfair, London, and estate planning services via Inheritance Made Simple in Bournemouth. Let us guide you to a secure financial future.
         </p>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

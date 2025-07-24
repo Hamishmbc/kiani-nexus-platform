@@ -46,22 +46,12 @@ const Index = () => {
       logoAlt: "Inheritance Made Simple logo"
     },
     {
-      title: "Insolvency Solutions",
-      description: "Expert insolvency and bankruptcy solutions providing positive pathways forward through challenging financial situations.",
-      icon: FileText,
-      url: "https://www.bankruptcy.co.uk/",
-      gradient: "from-orange-500 to-red-500",
-      delay: "200ms",
-      logo: "/lovable-uploads/217fea7e-8a17-4a1b-851c-8398fe875a9a.png",
-      logoAlt: "Bankruptcy.co.uk logo"
-    },
-    {
       title: "AI Integration",
       description: "Cutting-edge AI integration services to transform and optimize your financial processes through advanced technology solutions.",
       icon: Brain,
       url: "https://www.sumlii.com",
       gradient: "from-purple-500 to-pink-500",
-      delay: "300ms",
+      delay: "200ms",
       logo: "/lovable-uploads/d833d486-4f8d-4357-b5e1-9b271c3ddd8b.png",
       logoAlt: "Sumlii logo"
     }
@@ -77,10 +67,10 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Our Services
+              Our Service
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
-              Comprehensive financial solutions powered by expertise, regulation, and cutting-edge AI technology
+              Comprehensive solutions across the full financial ecosystem
             </p>
             <Button 
               size="lg"
@@ -115,10 +105,16 @@ const Index = () => {
                 </div>
                 <div className="text-center md:text-left">
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Meet Sean Kiani
+                    Independent Financial Adviser & Estate Planner for Individuals and Company Directors
                   </h3>
                   <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    Independent financial advisor with extensive experience in wealth management, estate planning, insolvency, and innovative AI financial integration.
+                    Sean Kiani brings a unique perspective to financial planning, having spent over two decades guiding individuals and business owners through complex matters of asset protection, strategic restructuring, business recovery, and estate planning. This extensive background, coupled with his recent transition into regulated financial advice, positions Sean exceptionally well to assist businesses and individuals across the entire financial ecosystem.
+                  </p>
+                  <p className="text-xl text-slate-300 mb-6 leading-relaxed">
+                    With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through his partnership with Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
+                  </p>
+                  <p className="text-xl text-slate-300 mb-6 leading-relaxed">
+                    Sean's expertise ensures personalised strategies that address your unique needs, from optimising wealth growth to securing legacies for future generations. Passionate about demystifying finance, Sean is committed to fostering long-term relationships built on trust, transparency, and tangible results.
                   </p>
                   <Button 
                     size="lg" 

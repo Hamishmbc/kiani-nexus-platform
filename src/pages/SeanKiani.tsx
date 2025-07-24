@@ -74,21 +74,17 @@ const SeanKiani = () => {
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-lg">
               <CardContent className="p-6 md:p-8">
                 <p className="text-base md:text-lg text-slate-300 leading-relaxed mb-6">
-                  Sean Kiani brings a unique perspective to financial planning, having spent over two decades guiding individuals and business owners through complex matters of business recovery, asset protection, and strategic restructuring. His transition into regulated financial advice marks the next chapter in a career defined by clarity, care, and practical solutions.
+                  Sean Kiani brings a unique perspective to financial planning, having spent over two decades guiding individuals and business owners through complex matters of asset protection, strategic restructuring, business recovery, and estate planning. This extensive background, coupled with his recent transition into regulated financial advice, positions Sean exceptionally well to assist businesses and individuals across the entire financial ecosystem.
+                </p>
+                <p className="text-base md:text-lg text-slate-300 leading-relaxed mb-6">
+                  With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through his partnership with Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
                 </p>
                 <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-                  After qualifying as an Independent Financial Adviser in 2023, Sean was excited to join Peregrine & Black — a firm whose independent ethos mirrors his own values. He is committed to offering clients best-of-breed pensions, investments, protection, and estate planning strategies, often using innovative structures such as Limited Liability Partnerships to achieve future-facing, tax-efficient outcomes.
+                  Sean's expertise ensures personalised strategies that address your unique needs, from optimising wealth growth to securing legacies for future generations. Passionate about demystifying finance, Sean is committed to fostering long-term relationships built on trust, transparency, and tangible results.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-lg">
-              <CardContent className="p-6 md:p-8">
-                <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-                  This new chapter combines Sean's deep commercial awareness with regulated financial advice — creating a powerful offering for clients who want to secure their legacy, optimise their wealth, and plan with confidence.
-                </p>
-              </CardContent>
-            </Card>
 
             {/* Peregrine & Black Section */}
             <Card className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-600 backdrop-blur-lg">

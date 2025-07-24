@@ -105,23 +105,17 @@ const Index = () => {
                 </div>
                 <div className="text-center md:text-left">
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Independent Financial Adviser & Estate Planner for Individuals and Company Directors
+                    Sean Kiani
                   </h3>
                   <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    Sean Kiani brings a unique perspective to financial planning, having spent over two decades guiding individuals and business owners through complex matters of asset protection, strategic restructuring, business recovery, and estate planning. This extensive background, coupled with his recent transition into regulated financial advice, positions Sean exceptionally well to assist businesses and individuals across the entire financial ecosystem.
-                  </p>
-                  <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through his partnership with Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
-                  </p>
-                  <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    Sean's expertise ensures personalised strategies that address your unique needs, from optimising wealth growth to securing legacies for future generations. Passionate about demystifying finance, Sean is committed to fostering long-term relationships built on trust, transparency, and tangible results.
+                    Independent Financial Adviser bringing over two decades of expertise in financial planning, estate planning, and strategic wealth management for individuals and company directors.
                   </p>
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
                     onClick={handleNavigateToSean}
                   >
-                    Learn More About Sean
+                    Meet Sean Kiani
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </div>

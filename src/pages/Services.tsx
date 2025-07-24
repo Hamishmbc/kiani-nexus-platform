@@ -39,14 +39,6 @@ const Services = () => {
       gradient: "from-orange-500 to-orange-600"
     },
     {
-      logo: "/lovable-uploads/217fea7e-8a17-4a1b-851c-8398fe875a9a.png",
-      title: "Bankruptcy.co.uk",
-      subtitle: "Positive Insolvency Solutions",
-      description: "Expert insolvency and bankruptcy solutions providing positive pathways forward through challenging financial situations. Professional guidance with dignity, clarity, and practical solutions for financial recovery.",
-      url: "https://www.bankruptcy.co.uk/",
-      gradient: "from-slate-600 to-slate-700"
-    },
-    {
       logo: "/lovable-uploads/d833d486-4f8d-4357-b5e1-9b271c3ddd8b.png",
       title: "Sumlii",
       subtitle: "AI Integration Solutions",

@@ -27,9 +27,12 @@ const Hero = () => {
           <span className="text-white font-normal">Kiani</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          At Sean Kiani, we empower individuals and company directors with tailored financial solutions. As an independent financial adviser, we provide expert wealth management through Peregrine and Black in Mayfair, London, and estate planning services via Inheritance Made Simple in Bournemouth. Let us guide you to a secure financial future.
-        </p>
+        <div className="mb-12 max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl text-blue-300 mb-6 font-light italic">Welcome</h2>
+          <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light">
+            Empowering individuals and company directors with tailored financial solutions. As an independent financial adviser, we provide expert wealth management through Peregrine and Black in Mayfair, London, and estate planning services via Inheritance Made Simple in Bournemouth. Let us guide you to a secure financial future.
+          </p>
+        </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">

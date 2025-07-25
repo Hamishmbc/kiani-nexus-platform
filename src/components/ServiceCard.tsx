@@ -54,7 +54,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         {/* Action Button */}
         <Button 
           variant="outline" 
-          className="w-full border-slate-600 text-slate-300 hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 hover:border-blue-500/50 hover:text-white transition-all duration-300 group-hover:shadow-lg"
+          className="w-full border-slate-600 text-slate-900 hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 hover:border-blue-500/50 hover:text-white transition-all duration-300 group-hover:shadow-lg"
           onClick={(e) => {
             e.stopPropagation();
             handleClick();

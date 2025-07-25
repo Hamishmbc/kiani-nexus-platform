@@ -196,21 +196,21 @@ const Contact = () => {
                   <Mail className="h-5 w-5 text-blue-400" />
                   <div>
                     <p className="text-slate-300 text-sm">Email</p>
-                    <p className="text-white">contact@kianifinance.com</p>
+                    <p className="text-white">sean@seankiani.co.uk</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-blue-400" />
                   <div>
                     <p className="text-slate-300 text-sm">Phone</p>
-                    <p className="text-white">+44 20 xxxx xxxx</p>
+                    <p className="text-white">+44 7479 739139</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-blue-400" />
                   <div>
                     <p className="text-slate-300 text-sm">Location</p>
-                    <p className="text-white">London, UK</p>
+                    <p className="text-white">London, Mayfair & Bournemouth</p>
                   </div>
                 </div>
               </CardContent>

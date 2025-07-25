@@ -35,7 +35,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
             <img 
               src={logo} 
               alt={logoAlt || title} 
-              className="w-full h-full object-contain"
+              className={`w-full h-full ${title === 'Financial Advisory & Wealth Management' ? 'object-cover' : 'object-contain'}`}
             />
           ) : (
             <Icon className="w-full h-full text-white" />

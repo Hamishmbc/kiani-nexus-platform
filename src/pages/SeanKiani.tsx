@@ -28,14 +28,20 @@ const SeanKiani = () => {
         <div className="container mx-auto max-w-6xl">
           <Card className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 border-slate-600 backdrop-blur-lg relative">
             <CardContent className="p-8 md:p-12">
-              {/* Peregrine & Black Logo - responsive positioning */}
+              {/* Company Logos - responsive positioning */}
               <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 relative">
-                {/* Logo positioned for mobile/tablet at top, desktop at top-right */}
-                <div className="lg:absolute lg:top-0 lg:right-0 order-first lg:order-none">
+                {/* Logos positioned for mobile/tablet at top, desktop at top-right */}
+                <div className="lg:absolute lg:top-0 lg:right-0 order-first lg:order-none flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                  <img 
+                    src="/lovable-uploads/eacd3396-5ff8-4c31-ac3c-af03007958f8.png" 
+                    alt="Inheritance Made Simple" 
+                    className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
+                    onClick={() => window.open("https://www.inheritancemadesimple.co.uk/", '_blank')}
+                  />
                   <img 
                     src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
                     alt="Peregrine & Black Investment Management" 
-                    className="h-16 md:h-20 lg:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
+                    className="h-14 md:h-16 lg:h-18 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
                     onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
                   />
                 </div>

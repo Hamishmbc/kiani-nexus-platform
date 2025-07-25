@@ -33,7 +33,7 @@ const SeanKiani = () => {
                 {/* Logos positioned for mobile/tablet at top, desktop at top-right */}
                 <div className="lg:absolute lg:top-0 lg:right-0 order-first lg:order-none flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                   <img 
-                    src="/lovable-uploads/eacd3396-5ff8-4c31-ac3c-af03007958f8.png" 
+                    src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
                     alt="Inheritance Made Simple" 
                     className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
                     onClick={() => window.open("https://www.inheritancemadesimple.co.uk/", '_blank')}

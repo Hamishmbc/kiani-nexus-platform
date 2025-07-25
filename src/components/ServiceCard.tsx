@@ -30,7 +30,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
         
         {/* Logo */}
-        <div className={`${title === 'Financial Advisory & Wealth Management' ? 'w-80 h-80' : 'w-40 h-40'} rounded-2xl bg-white/10 backdrop-blur-sm ${title === 'Financial Advisory & Wealth Management' ? 'p-2' : 'p-6'} mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center`}>
+        <div className={`${title === 'Financial Advisory & Wealth Management' ? 'w-80 h-80' : 'w-40 h-40'} rounded-2xl bg-white/10 backdrop-blur-sm p-2 mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center`}>
           {logo ? (
             <img 
               src={logo} 

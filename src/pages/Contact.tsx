@@ -225,6 +225,8 @@ const Contact = () => {
                 />
                 <p className="text-slate-300 text-sm">
                   Regulated by the Financial Conduct Authority
+                  <br />
+                  FRN 757727
                 </p>
               </CardContent>
             </Card>

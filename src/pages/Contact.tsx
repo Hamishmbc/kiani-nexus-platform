@@ -196,7 +196,7 @@ const Contact = () => {
                   <Mail className="h-5 w-5 text-blue-400" />
                   <div>
                     <p className="text-slate-300 text-sm">Email</p>
-                    <p className="text-white">sean@seankiani.co.uk</p>
+                    <p className="text-white">sean.kiani@peregrineblack.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">

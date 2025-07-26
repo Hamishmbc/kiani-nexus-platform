@@ -21,7 +21,7 @@ const Index = () => {
   const services = [
     {
       title: "Financial Advisory & Wealth Management",
-      description: "Independent financial advice and comprehensive wealth management solutions through Sean Kiani of Peregrine and Black.",
+      description: "Independent FCA regulated financial advice and comprehensive wealth management solutions.",
       icon: TrendingUp,
       url: "https://www.peregrineblack.com/",
       gradient: "from-blue-600 to-purple-600",
@@ -87,7 +87,7 @@ const Index = () => {
                 Welcome
               </p>
               <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-12 max-w-3xl mx-auto">
-                Comprehensive financial solutions integrating independent advice, estate planning, and cutting-edge AI technology to secure and optimize your wealth across the entire financial ecosystem.
+                Comprehensive financial solutions that seamlessly integrate independent FCA-authorised advice, strategic estate planning, and cutting-edge AI technology to safeguard and optimise your wealth across the global financial ecosystem.
               </p>
               
               {/* Key Features Grid */}
@@ -143,21 +143,19 @@ const Index = () => {
           </div>
 
           {/* Company Logos */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-12">
-            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
-              <img 
-                src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
-                alt="Inheritance Made Simple" 
-                className="h-16 md:h-20 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity filter brightness-110"
-                onClick={() => window.open("https://www.inheritancemadesimple.co.uk/", '_blank')}
-              />
-              <img 
-                src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
-                alt="Peregrine & Black Investment Management" 
-                className="h-18 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
-                onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
-              />
-            </div>
+          <div className="flex justify-center items-center gap-8 mb-12">
+            <img 
+              src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
+              alt="Inheritance Made Simple" 
+              className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity filter brightness-110"
+              onClick={() => window.open("https://www.inheritancemadesimple.co.uk/", '_blank')}
+            />
+            <img 
+              src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
+              alt="Peregrine & Black Investment Management" 
+              className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
+              onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
+            />
           </div>
 
           <div className="space-y-8">
@@ -175,36 +173,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Peregrine & Black Partnership */}
-            <Card className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-600 backdrop-blur-lg">
-              <CardContent className="p-8 md:p-12">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="flex-shrink-0">
-                    <img 
-                      src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
-                      alt="Peregrine & Black Investment Management" 
-                      className="h-16 md:h-20 w-auto object-contain"
-                    />
-                  </div>
-                  <div className="text-center md:text-left flex-1">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                      Partnered with Peregrine & Black
-                    </h3>
-                    <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                      Sean operates through Peregrine & Black Investment Management, delivering independent financial advice with institutional-grade investment solutions.
-                    </p>
-                    <Button 
-                      size="lg"
-                      className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold transition-all duration-300 transform hover:scale-105"
-                      onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
-                    >
-                      Visit Peregrine & Black
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>

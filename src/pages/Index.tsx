@@ -39,7 +39,7 @@ const Index = () => {
       title: "AI Integration",
       description: "Cutting-edge AI integration services to transform and optimize your financial processes through advanced technology solutions.",
       icon: Brain,
-      url: "https://www.sumlii.com",
+      url: "https://sumlii.com/",
       gradient: "from-purple-500 to-pink-500",
       delay: "200ms",
       logo: "/lovable-uploads/d833d486-4f8d-4357-b5e1-9b271c3ddd8b.png",

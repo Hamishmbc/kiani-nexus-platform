@@ -61,15 +61,20 @@ const Contact = () => {
             Back
           </Button>
           
-          {/* Professional Logos Section */}
-          <div className="flex justify-center items-center py-8">
-            <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 shadow-lg">
-              <img 
-                src="/lovable-uploads/7beac4bb-a93a-43ad-b844-a99a31b6cb40.png" 
-                alt="IMS and Peregrine & Black Investment Management Logos" 
-                className="h-16 w-auto object-contain"
-              />
-            </div>
+          {/* Company Logos */}
+          <div className="flex justify-center items-center gap-8 mb-8">
+            <img 
+              src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
+              alt="Inheritance Made Simple" 
+              className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity filter brightness-110"
+              onClick={() => window.open("https://www.inheritancemadesimple.co.uk/", '_blank')}
+            />
+            <img 
+              src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
+              alt="Peregrine & Black Investment Management" 
+              className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
+              onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
+            />
           </div>
         </div>
       </header>

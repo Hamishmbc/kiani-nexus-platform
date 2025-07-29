@@ -60,6 +60,17 @@ const Contact = () => {
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
           </Button>
+          
+          {/* Professional Logos Section */}
+          <div className="flex justify-center items-center py-8">
+            <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 shadow-lg">
+              <img 
+                src="/lovable-uploads/7beac4bb-a93a-43ad-b844-a99a31b6cb40.png" 
+                alt="IMS and Peregrine & Black Investment Management Logos" 
+                className="h-16 w-auto object-contain"
+              />
+            </div>
+          </div>
         </div>
       </header>
 

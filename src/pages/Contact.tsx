@@ -151,11 +151,11 @@ const Contact = () => {
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent className="bg-slate-800 border-slate-600">
-                        <SelectItem value="wealth-management">Wealth Management</SelectItem>
-                        <SelectItem value="estate-planning">Estate Planning</SelectItem>
-                        <SelectItem value="insolvency-solutions">Insolvency Solutions</SelectItem>
-                        <SelectItem value="ai-integration">AI Integration</SelectItem>
-                        <SelectItem value="general-consultation">General Consultation</SelectItem>
+                        <SelectItem value="wealth-management" className="text-white hover:bg-slate-700">Wealth Management</SelectItem>
+                        <SelectItem value="estate-planning" className="text-white hover:bg-slate-700">Estate Planning</SelectItem>
+                        <SelectItem value="insolvency-solutions" className="text-white hover:bg-slate-700">Insolvency Solutions</SelectItem>
+                        <SelectItem value="ai-integration" className="text-white hover:bg-slate-700">AI Integration</SelectItem>
+                        <SelectItem value="general-consultation" className="text-white hover:bg-slate-700">General Consultation</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

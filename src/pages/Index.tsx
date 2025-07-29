@@ -144,7 +144,7 @@ const Index = () => {
               src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
               alt="Inheritance Made Simple" 
               className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity filter brightness-110"
-              onClick={() => window.open("https://www.inheritancemadesimple.co.uk/", '_blank')}
+              onClick={() => window.open("https://www.inheritancemadesimple.com/", '_blank')}
             />
             <img 
               src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 

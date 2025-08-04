@@ -48,143 +48,151 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Premium Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary via-background to-muted"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-20 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,hsl(var(--background))_100%)]"></div>
+      </div>
+
       {/* Header */}
-      <header className="py-8 px-4">
+      <header className="py-12 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <Button 
             variant="ghost" 
-            className="text-slate-300 hover:text-white mb-4"
+            className="text-muted-foreground hover:text-primary mb-8"
             onClick={() => navigate(-1)}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
           </Button>
           
-          {/* Company Logos */}
-          <div className="flex justify-center items-center gap-8 mb-8">
-            <img 
-              src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
-              alt="Inheritance Made Simple" 
-              className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity filter brightness-110"
-              onClick={() => window.open("https://www.inheritancemadesimple.com/", '_blank')}
-            />
-            <img 
-              src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
-              alt="Peregrine & Black Investment Management" 
-              className="h-20 md:h-24 w-auto object-contain opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
-              onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}
-            />
+          {/* Premium Company Logos */}
+          <div className="flex justify-center items-center gap-12 mb-12">
+            <div className="group cursor-pointer" onClick={() => window.open("https://www.inheritancemadesimple.com/", '_blank')}>
+              <img 
+                src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
+                alt="Inheritance Made Simple" 
+                className="h-24 md:h-28 w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 filter brightness-110"
+              />
+            </div>
+            <div className="group cursor-pointer" onClick={() => window.open("https://www.peregrineblack.com/", '_blank')}>
+              <img 
+                src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
+                alt="Peregrine & Black Investment Management" 
+                className="h-24 md:h-28 w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </header>
 
-      <div className="container mx-auto max-w-6xl px-4 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Get Started Today
+      <div className="container mx-auto max-w-6xl px-4 py-12 relative z-10">
+        <div className="text-center mb-16">
+          <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-8">
+            <span className="text-luxury">Get Started Today</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
             Ready to transform your financial future? Contact Sean Kiani for expert financial advice tailored to your needs.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Contact Form */}
           <div className="md:col-span-2">
-            <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl text-white">Contact Sean Kiani</CardTitle>
+            <Card className="bg-card/60 border-border/50 backdrop-blur-xl shadow-elegant">
+              <CardHeader className="pb-8">
+                <CardTitle className="font-['Playfair_Display'] text-3xl text-luxury">Contact Sean Kiani</CardTitle>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName" className="text-slate-300">First Name *</Label>
+              <CardContent className="p-8">
+                <form onSubmit={handleSubmit} className="space-y-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <Label htmlFor="firstName" className="text-foreground font-medium">First Name *</Label>
                       <Input
                         id="firstName"
                         value={formData.firstName}
                         onChange={(e) => handleInputChange("firstName", e.target.value)}
                         required
-                        className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
+                        className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary/50"
                         placeholder="Enter your first name"
                       />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName" className="text-slate-300">Last Name *</Label>
+                    <div className="space-y-3">
+                      <Label htmlFor="lastName" className="text-foreground font-medium">Last Name *</Label>
                       <Input
                         id="lastName"
                         value={formData.lastName}
                         onChange={(e) => handleInputChange("lastName", e.target.value)}
                         required
-                        className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
+                        className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary/50"
                         placeholder="Enter your last name"
                       />
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="text-slate-300">Email Address *</Label>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <Label htmlFor="email" className="text-foreground font-medium">Email Address *</Label>
                       <Input
                         id="email"
                         type="email"
                         value={formData.email}
                         onChange={(e) => handleInputChange("email", e.target.value)}
                         required
-                        className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
+                        className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary/50"
                         placeholder="your.email@example.com"
                       />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-slate-300">Phone Number</Label>
+                    <div className="space-y-3">
+                      <Label htmlFor="phone" className="text-foreground font-medium">Phone Number</Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
+                        className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary/50"
                         placeholder="+44 7xxx xxx xxx"
                       />
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="company" className="text-slate-300">Company (Optional)</Label>
+                  <div className="space-y-3">
+                    <Label htmlFor="company" className="text-foreground font-medium">Company (Optional)</Label>
                     <Input
                       id="company"
                       value={formData.company}
                       onChange={(e) => handleInputChange("company", e.target.value)}
-                      className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
+                      className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary/50"
                       placeholder="Your company name"
                     />
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="serviceInterest" className="text-slate-300">Service of Interest</Label>
+                  <div className="space-y-3">
+                    <Label htmlFor="serviceInterest" className="text-foreground font-medium">Service of Interest</Label>
                     <Select value={formData.serviceInterest} onValueChange={(value) => handleInputChange("serviceInterest", value)}>
-                      <SelectTrigger className="bg-slate-700/50 border-slate-600 text-white">
+                      <SelectTrigger className="bg-background/50 border-border text-foreground">
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
-                      <SelectContent className="bg-slate-800 border-slate-600">
-                        <SelectItem value="wealth-management" className="text-white hover:bg-slate-700">Wealth Management</SelectItem>
-                        <SelectItem value="estate-planning" className="text-white hover:bg-slate-700">Estate Planning</SelectItem>
-                        <SelectItem value="insolvency-solutions" className="text-white hover:bg-slate-700">Insolvency Solutions</SelectItem>
-                        <SelectItem value="ai-integration" className="text-white hover:bg-slate-700">AI Integration</SelectItem>
-                        <SelectItem value="general-consultation" className="text-white hover:bg-slate-700">General Consultation</SelectItem>
+                      <SelectContent className="bg-card border-border z-50">
+                        <SelectItem value="wealth-management" className="text-foreground hover:bg-muted">Wealth Management</SelectItem>
+                        <SelectItem value="estate-planning" className="text-foreground hover:bg-muted">Estate Planning</SelectItem>
+                        <SelectItem value="general-consultation" className="text-foreground hover:bg-muted">General Consultation</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-slate-300">Message *</Label>
+                  <div className="space-y-3">
+                    <Label htmlFor="message" className="text-foreground font-medium">Message *</Label>
                     <Textarea
                       id="message"
                       value={formData.message}
                       onChange={(e) => handleInputChange("message", e.target.value)}
                       required
                       rows={5}
-                      className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
+                      className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary/50"
                       placeholder="Please describe your financial goals and how Sean can help you..."
                     />
                   </div>
@@ -192,7 +200,7 @@ const Contact = () => {
                   <Button 
                     type="submit"
                     size="lg"
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold transition-all duration-300 transform hover:scale-105"
+                    className="w-full bg-primary hover:bg-primary/90 text-secondary font-semibold py-4 text-lg transition-all duration-500 transform hover:scale-105 shadow-elegant hover:shadow-glow"
                   >
                     Send Message
                   </Button>
@@ -202,47 +210,53 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-6">
-            <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-lg">
+          <div className="space-y-8">
+            <Card className="bg-card/60 border-border/50 backdrop-blur-xl shadow-elegant">
               <CardHeader>
-                <CardTitle className="text-xl text-white">Contact Information</CardTitle>
+                <CardTitle className="font-['Playfair_Display'] text-2xl text-luxury">Contact Information</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-blue-400" />
+              <CardContent className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
                   <div>
-                    <p className="text-slate-300 text-sm">Email</p>
-                    <p className="text-white">sean.kiani@peregrineblack.com</p>
+                    <p className="text-muted-foreground text-sm font-medium">Email</p>
+                    <p className="text-foreground font-semibold">sean.kiani@peregrineblack.com</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-blue-400" />
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Phone className="h-6 w-6 text-primary" />
+                  </div>
                   <div>
-                    <p className="text-slate-300 text-sm">Phone</p>
-                    <p className="text-white">+44 7479 739139</p>
+                    <p className="text-muted-foreground text-sm font-medium">Phone</p>
+                    <p className="text-foreground font-semibold">+44 7479 739139</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-blue-400" />
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
                   <div>
-                    <p className="text-slate-300 text-sm">Location</p>
-                    <p className="text-white">London, Mayfair & Bournemouth</p>
+                    <p className="text-muted-foreground text-sm font-medium">Location</p>
+                    <p className="text-foreground font-semibold">London, Mayfair & Bournemouth</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 border-slate-600 backdrop-blur-lg">
-              <CardContent className="p-6 text-center">
+            <Card className="bg-secondary border-primary/20 backdrop-blur-xl shadow-elegant">
+              <CardContent className="p-8 text-center">
                 <img 
                   src="/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png" 
                   alt="Peregrine & Black Investment Management" 
-                  className="h-12 w-auto object-contain mx-auto mb-4"
+                  className="h-16 w-auto object-contain mx-auto mb-6 opacity-90"
                 />
-                <p className="text-slate-300 text-sm">
+                <p className="text-primary/80 text-sm font-medium">
                   Regulated by the Financial Conduct Authority
                   <br />
-                  FRN 757727
+                  <span className="text-primary font-semibold">FRN 757727</span>
                 </p>
               </CardContent>
             </Card>

@@ -75,7 +75,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/d243eb15-e493-453f-a7e9-1787097e613e.png" 
                   alt="Sean Kiani Signature" 
-                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity filter invert brightness-0 contrast-100"
                 />
               </div>
               
@@ -197,18 +197,18 @@ const Index = () => {
       {/* Premium CTA Section */}
       <section className="py-32 px-4">
         <div className="container mx-auto max-w-5xl text-center">
-          <Card className="luxury-gradient border-primary/20 backdrop-blur-xl shadow-luxury relative overflow-hidden">
+          <Card className="bg-secondary border-primary/20 backdrop-blur-xl shadow-luxury relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
             <CardContent className="p-16 md:p-20 relative z-10">
               <div className="mb-8">
                 <Award className="h-16 w-16 mx-auto text-primary mb-6" />
               </div>
               <h3 className="font-['Playfair_Display'] text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
-                <span className="text-luxury">Book your complimentary meeting with Sean in Mayfair, Bournemouth or online</span>
+                <span className="text-primary">Book your complimentary meeting with Sean in Mayfair, Bournemouth or online</span>
               </h3>
               <Button 
                 size="lg" 
-                className="luxury-gradient hover:shadow-glow text-secondary-foreground px-12 py-6 text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20"
+                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-12 py-6 text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20"
                 onClick={handleNavigateToContact}
               >
                 Book your complimentary meeting now

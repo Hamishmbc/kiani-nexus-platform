@@ -21,51 +21,53 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
 
   return (
     <Card 
-      className="group bg-slate-800/50 border-slate-700 hover:border-slate-600 backdrop-blur-lg transition-all duration-500 hover:scale-105 cursor-pointer animate-fade-in"
+      className="group bg-card/40 border-border/30 hover:border-primary/40 backdrop-blur-xl transition-all duration-700 hover:scale-105 cursor-pointer animate-fade-in shadow-elegant hover:shadow-luxury"
       style={{ animationDelay: delay }}
       onClick={handleClick}
     >
-      <CardContent className="p-8 relative overflow-hidden">
-        {/* Background Gradient Effect */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+      <CardContent className="p-10 md:p-12 relative overflow-hidden">
+        {/* Premium Background Gradient Effect */}
+        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-700`}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         
-        {/* Logo */}
-        <div className={`${title === 'Financial Advisory & Wealth Management' ? 'w-48 h-48' : 'w-40 h-40'} rounded-2xl bg-white/10 backdrop-blur-sm p-4 ${title === 'Financial Advisory & Wealth Management' ? 'mb-4' : 'mb-6'} group-hover:scale-110 transition-transform duration-300 flex items-center justify-center`}>
+        {/* Premium Logo Container */}
+        <div className="w-24 h-24 md:w-28 md:h-28 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm p-6 mb-8 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20">
           {logo ? (
             <img 
               src={logo} 
               alt={logoAlt || title} 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain filter brightness-110"
             />
           ) : (
-            <Icon className="w-full h-full text-white" />
+            <Icon className="w-full h-full text-primary" />
           )}
         </div>
 
-        {/* Content */}
-        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-300">
+        {/* Premium Content */}
+        <h3 className="font-['Playfair_Display'] text-2xl md:text-3xl font-bold text-foreground mb-6 group-hover:text-luxury transition-all duration-500">
           {title}
         </h3>
         
-        <p className="text-slate-300 mb-6 leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
+        <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground/90 transition-colors duration-500">
           {description}
         </p>
 
-        {/* Action Button */}
+        {/* Premium Action Button */}
         <Button 
           variant="outline" 
-          className="w-full border-slate-600 text-slate-900 hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 hover:border-blue-500/50 hover:text-white transition-all duration-300 group-hover:shadow-lg"
+          className="w-full border-primary/30 text-primary hover:luxury-gradient hover:border-primary/50 hover:text-secondary-foreground transition-all duration-500 group-hover:shadow-glow font-semibold py-3"
           onClick={(e) => {
             e.stopPropagation();
             handleClick();
           }}
         >
-          Learn More
-          <ExternalLink className="ml-2 h-4 w-4" />
+          Explore Services
+          <ExternalLink className="ml-2 h-5 w-5" />
         </Button>
 
-        {/* Hover Effect Overlay */}
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-bl-full"></div>
+        {/* Premium Hover Effect Overlay */}
+        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-bl-full"></div>
+        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-tr-full"></div>
       </CardContent>
     </Card>
   );

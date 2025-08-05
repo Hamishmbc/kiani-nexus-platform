@@ -36,7 +36,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
             <img 
               src={logo} 
               alt={logoAlt || title} 
-              className="h-24 md:h-28 w-auto object-contain filter brightness-110"
+              className="h-24 md:h-28 w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
             />
           ) : (
             <Icon className="w-full h-full text-primary" />

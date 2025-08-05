@@ -23,7 +23,8 @@ const Index = () => {
       gradient: "from-primary/20 to-accent/20",
       delay: "0ms",
       logo: "/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png",
-      logoAlt: "Peregrine & Black logo"
+      logoAlt: "Peregrine & Black logo",
+      logoSize: "large" as const
     },
     {
       title: "Estate Planning",
@@ -33,7 +34,8 @@ const Index = () => {
       gradient: "from-accent/20 to-primary/20",
       delay: "100ms",
       logo: "/lovable-uploads/1af090b8-6bec-4e11-9932-0221d16d6fe2.png",
-      logoAlt: "Inheritance Made Simple logo"
+      logoAlt: "Inheritance Made Simple logo",
+      logoSize: "normal" as const
     }
   ];
 

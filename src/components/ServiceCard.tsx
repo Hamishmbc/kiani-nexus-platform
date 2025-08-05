@@ -12,12 +12,15 @@ interface ServiceCardProps {
   delay: string;
   logo?: string;
   logoAlt?: string;
+  logoSize?: "normal" | "large";
 }
 
-const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, logo, logoAlt }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, logo, logoAlt, logoSize = "normal" }: ServiceCardProps) => {
   const handleClick = () => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
+
+  const logoSizeClass = logoSize === "large" ? "h-48 md:h-56" : "h-24 md:h-28";
 
   return (
     <Card 
@@ -36,7 +39,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
             <img 
               src={logo} 
               alt={logoAlt || title} 
-              className="h-24 md:h-28 w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
+              className={`${logoSizeClass} w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105`}
             />
           ) : (
             <Icon className="w-full h-full text-primary" />

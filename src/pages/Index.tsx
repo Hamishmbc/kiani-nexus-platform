@@ -154,13 +154,13 @@ const Index = () => {
               <CardContent className="p-10 md:p-16">
                 <div className="prose prose-lg prose-invert max-w-none">
                   <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
-                    Sean brings a unique perspective to financial advisory for Baby Boomers, drawing from over two decades of successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, strategic restructuring, and business recovery. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
+                    Sean brings a unique perspective to financial advisory for Baby Boomers, drawing from over two decades of successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, and strategic restructuring. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
                   </p>
                   <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
-                    With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through his partnership with Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
+                    With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
                   </p>
                   <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed font-light">
-                    Sean's expertise ensures personalised strategies tailored to your distinctive needs, from optimizing wealth growth to safeguarding legacies for future generations. Passionate about simplifying finance, Sean is dedicated to building enduring relationships founded on trust, transparency, and meaningful outcomes.
+                    Sean's expertise ensures personalised strategies tailored to your distinctive needs, from optimising wealth growth to safeguarding legacies for future generations. Passionate about simplifying finance, Sean is dedicated to building enduring relationships founded on trust, transparency, and meaningful outcomes.
                   </p>
                 </div>
               </CardContent>

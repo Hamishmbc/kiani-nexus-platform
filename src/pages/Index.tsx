@@ -75,7 +75,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/d243eb15-e493-453f-a7e9-1787097e613e.png" 
                   alt="Sean Kiani Signature" 
-                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity filter invert brightness-0 contrast-100"
+                  className="h-48 md:h-60 lg:h-72 w-auto opacity-80 hover:opacity-100 transition-opacity filter invert brightness-0 contrast-100"
                 />
               </div>
               

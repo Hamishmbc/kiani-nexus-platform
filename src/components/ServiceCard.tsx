@@ -31,12 +31,12 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         
         {/* Premium Logo Container */}
-        <div className="w-24 h-24 md:w-28 md:h-28 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm p-6 mb-8 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20">
+        <div className="w-32 h-32 md:w-36 md:h-36 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm p-6 mb-8 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20">
           {logo ? (
             <img 
               src={logo} 
               alt={logoAlt || title} 
-              className="w-full h-full object-contain filter brightness-110"
+              className="h-24 md:h-28 w-auto object-contain filter brightness-110"
             />
           ) : (
             <Icon className="w-full h-full text-primary" />

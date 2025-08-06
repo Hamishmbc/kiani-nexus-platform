@@ -193,24 +193,24 @@ const Index = () => {
       </section>
 
       {/* Premium CTA Section */}
-      <section className="py-32 px-4">
+      <section className="py-16 md:py-32 px-4">
         <div className="container mx-auto max-w-5xl text-center">
           <Card className="bg-secondary border-primary/20 backdrop-blur-xl shadow-luxury relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
-            <CardContent className="p-16 md:p-20 relative z-10">
-              <div className="mb-8">
-                <Award className="h-16 w-16 mx-auto text-primary mb-6" />
+            <CardContent className="p-6 md:p-16 lg:p-20 relative z-10">
+              <div className="mb-6 md:mb-8">
+                <Award className="h-12 w-12 md:h-16 md:w-16 mx-auto text-primary mb-4 md:mb-6" />
               </div>
-              <h3 className="font-['Playfair_Display'] text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+              <h3 className="font-['Playfair_Display'] text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8 leading-tight">
                 <span className="text-primary">Book your complimentary meeting with Sean in Mayfair, Bournemouth or online</span>
               </h3>
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-12 py-6 text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20"
+                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-6 py-4 md:px-12 md:py-6 text-lg md:text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20 w-full md:w-auto"
                 onClick={handleNavigateToContact}
               >
                 Book your complimentary meeting now
-                <ArrowRight className="ml-3 h-6 w-6" />
+                <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6" />
               </Button>
             </CardContent>
           </Card>

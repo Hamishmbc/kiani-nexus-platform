@@ -22,7 +22,6 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
 
   const logoSizeClass = logoSize === "large" ? "h-48 md:h-56" : "h-24 md:h-28";
   const containerSizeClass = logoSize === "large" ? "w-56 h-56 md:w-64 md:h-64" : "w-32 h-32 md:w-36 md:h-36";
-  const paddingClass = logoSize === "large" ? "px-6 py-1" : "p-6";
 
   return (
     <Card 
@@ -36,7 +35,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         
         {/* Premium Logo Container */}
-        <div className={`${containerSizeClass} rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm ${paddingClass} mb-8 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20`}>
+        <div className={`${containerSizeClass} rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm p-6 mb-8 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20`}>
           {logo ? (
             <img 
               src={logo} 

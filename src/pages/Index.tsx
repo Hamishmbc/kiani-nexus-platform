@@ -24,7 +24,7 @@ const Index = () => {
       delay: "0ms",
       logo: "/lovable-uploads/f9d66d09-6790-4808-90e2-47b5a805ff3f.png",
       logoAlt: "Peregrine & Black logo",
-      logoSize: "large" as const
+      logoSize: "normal" as const
     },
     {
       title: "Estate Planning",

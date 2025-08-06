@@ -206,7 +206,7 @@ const Index = () => {
               </h3>
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-6 py-4 md:px-12 md:py-6 text-lg md:text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20 w-full md:w-auto"
+                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-6 py-6 md:px-12 md:py-6 text-lg md:text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20 w-full md:w-auto min-h-[60px]"
                 onClick={handleNavigateToContact}
               >
                 Book your complimentary meeting now

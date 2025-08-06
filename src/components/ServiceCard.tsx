@@ -22,7 +22,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
 
   const logoSizeClass = logoSize === "large" ? "h-48 md:h-56" : "h-24 md:h-28";
   const containerSizeClass = logoSize === "large" ? "w-56 h-56 md:w-64 md:h-64" : "w-32 h-32 md:w-36 md:h-36";
-  const paddingClass = logoSize === "large" ? "p-3" : "p-6";
+  const paddingClass = logoSize === "large" ? "p-1" : "p-6";
 
   return (
     <Card 

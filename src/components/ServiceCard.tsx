@@ -21,7 +21,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
   };
 
   const logoSizeClass = logoSize === "large" ? "h-48 md:h-56" : "h-24 md:h-28";
-  const containerSizeClass = logoSize === "large" ? "w-56 h-56 md:w-64 md:h-64" : "w-32 h-32 md:w-36 md:h-36";
+  const containerSizeClass = "w-32 h-32 md:w-36 md:h-36"; // Keep container same size regardless of logo size
 
   return (
     <Card 

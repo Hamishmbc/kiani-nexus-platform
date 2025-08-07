@@ -33,8 +33,8 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-700`}></div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         
-        {/* Premium Logo Container */}
-        <div className="mb-8 flex items-center justify-center">
+        {/* Premium Logo Container - Fixed height for alignment */}
+        <div className="mb-8 flex items-center justify-center h-72 md:h-80">
           {logo ? (
             <img 
               src={logo} 

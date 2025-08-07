@@ -154,7 +154,7 @@ const Index = () => {
           <div className="space-y-8">
             <Card className="bg-card/60 border-border/50 backdrop-blur-xl shadow-elegant">
               <CardContent className="p-10 md:p-16">
-                <div className="prose prose-lg prose-invert max-w-none">
+                <div className="prose prose-lg prose-invert max-w-none text-center md:text-left">
                   <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
                     Sean brings a unique perspective to financial advisory for Baby Boomers, drawing from over two decades of successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, and strategic restructuring. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
                   </p>
@@ -206,11 +206,14 @@ const Index = () => {
               </h3>
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-6 py-6 md:px-12 md:py-6 text-lg md:text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20 w-full md:w-auto min-h-[60px]"
+                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary px-6 py-6 md:px-12 md:py-6 text-sm md:text-xl font-semibold transition-all duration-500 transform hover:scale-105 shadow-elegant border border-primary/20 w-full md:w-auto min-h-[80px] md:min-h-[60px] flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2"
                 onClick={handleNavigateToContact}
               >
-                Book your complimentary meeting now
-                <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6" />
+                <span className="text-center leading-tight">
+                  Book your complimentary<br className="md:hidden" />
+                  <span className="md:ml-1">meeting now</span>
+                </span>
+                <ArrowRight className="h-4 w-4 md:h-6 md:w-6 flex-shrink-0" />
               </Button>
             </CardContent>
           </Card>

@@ -20,8 +20,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
-  const logoSizeClass = logoSize === "large" ? "h-48 md:h-56" : "h-24 md:h-28";
-  const containerSizeClass = "w-32 h-32 md:w-36 md:h-36"; // Keep container same size regardless of logo size
+  const logoSizeClass = logoSize === "large" ? "h-64 md:h-72" : "h-24 md:h-28";
 
   return (
     <Card 
@@ -35,7 +34,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
         
         {/* Premium Logo Container */}
-        <div className={`${containerSizeClass} rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm p-6 mb-8 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20`}>
+        <div className="mb-8 flex items-center justify-center">
           {logo ? (
             <img 
               src={logo} 
@@ -43,7 +42,9 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
               className={`${logoSizeClass} w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105`}
             />
           ) : (
-            <Icon className="w-full h-full text-primary" />
+            <div className="w-32 h-32 md:w-36 md:h-36 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm p-6 group-hover:scale-110 group-hover:shadow-glow transition-all duration-500 flex items-center justify-center border border-primary/20">
+              <Icon className="w-full h-full text-primary" />
+            </div>
           )}
         </div>
 

@@ -52,10 +52,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4">
         <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="text-center">
+          <div className="text-center flex flex-col items-center">
             {/* Premium Profile Section */}
-            <div className="mb-16 relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] mx-auto relative">
+            <div className="mb-16 relative flex justify-center">
+              <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] relative">
                 <div className="absolute inset-0 luxury-gradient rounded-full blur-3xl opacity-20 animate-glow"></div>
                 <div className="absolute inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
                 <img 
@@ -67,7 +67,7 @@ const Index = () => {
             </div>
 
             {/* Premium Typography */}
-            <div className="max-w-5xl mx-auto mb-20">
+            <div className="max-w-5xl mx-auto mb-20 flex flex-col items-center">
               {/* Sean's Logo as Main Heading */}
               <div className="mb-12 flex justify-center">
                 <img 

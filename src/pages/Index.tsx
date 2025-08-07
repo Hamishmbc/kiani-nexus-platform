@@ -68,11 +68,11 @@ const Index = () => {
 
             {/* Premium Typography */}
             <div className="max-w-5xl mx-auto mb-20">
-              {/* Sean's Signature as Main Heading */}
+              {/* Sean's Logo as Main Heading */}
               <div className="mb-12 flex justify-center">
                 <img 
-                  src="/lovable-uploads/0e786774-345d-47cf-8401-6d8374222a14.png" 
-                  alt="Sean Kiani Signature" 
+                  src="/lovable-uploads/01be6add-b71d-4d91-9364-ac2c21b1faa4.png" 
+                  alt="Sean Kiani Logo" 
                   className="h-32 md:h-40 lg:h-48 w-auto opacity-90 hover:opacity-100 transition-opacity"
                 />
               </div>

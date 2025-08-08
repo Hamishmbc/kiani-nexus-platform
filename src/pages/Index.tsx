@@ -65,12 +65,7 @@ const Index = () => {
           <div className="text-center flex flex-col items-center">
             {/* Premium Profile Section */}
             <div className="mb-16 relative flex justify-center">
-              <div 
-                className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] relative"
-                style={{ 
-                  transform: `translateY(${scrollY * 0.1}px) scale(${1 + scrollY * 0.0001})` 
-                }}
-              >
+            <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] relative">
                 <div className="absolute inset-0 luxury-gradient rounded-full blur-3xl opacity-20 animate-glow"></div>
                 <div className="absolute inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
                 <img 
@@ -149,12 +144,7 @@ const Index = () => {
           </div>
 
           {/* Premium Company Logos */}
-          <div 
-            className="flex justify-center items-center gap-12 mb-16"
-            style={{ 
-              transform: `translateY(${scrollY * 0.05}px)` 
-            }}
-          >
+          <div className="flex justify-center items-center gap-12 mb-16">
             <div className="group cursor-pointer" onClick={() => window.open("https://www.inheritancemadesimple.com/", '_blank')}>
               <img 
                 src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 

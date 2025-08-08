@@ -49,7 +49,7 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
         </div>
 
         {/* Premium Content */}
-        <h3 className="font-['Playfair_Display'] text-2xl md:text-3xl font-bold text-foreground mb-6 group-hover:text-luxury transition-all duration-500">
+        <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6 group-hover:text-luxury transition-all duration-500">
           {title}
         </h3>
         

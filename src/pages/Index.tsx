@@ -65,7 +65,7 @@ const Index = () => {
           <div className="text-center flex flex-col items-center">
             {/* Premium Profile Section */}
             <div className="mb-16 relative flex justify-center">
-            <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] relative">
+            <div className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 relative">
                 <div className="absolute inset-0 luxury-gradient rounded-full blur-3xl opacity-20 animate-glow"></div>
                 <div className="absolute inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
                 <img 

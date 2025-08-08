@@ -5,10 +5,14 @@ import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Index = () => {
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
+  const heroImageAnimation = useScrollAnimation(0.2);
+  const companyLogosAnimation = useScrollAnimation(0.2);
+  const aboutSectionAnimation = useScrollAnimation(0.1);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +69,14 @@ const Index = () => {
           <div className="text-center flex flex-col items-center">
             {/* Premium Profile Section */}
             <div className="mb-16 relative flex justify-center">
-            <div className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 relative">
+            <div 
+              ref={heroImageAnimation.ref}
+              className={`w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 relative transition-all duration-700 ${
+                heroImageAnimation.isVisible 
+                  ? 'opacity-100 translate-y-0 scale-100' 
+                  : 'opacity-0 translate-y-8 scale-95'
+              }`}
+            >
                 <div className="absolute inset-0 luxury-gradient rounded-full blur-3xl opacity-20 animate-glow"></div>
                 <div className="absolute inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
                 <img 
@@ -144,7 +155,14 @@ const Index = () => {
           </div>
 
           {/* Premium Company Logos */}
-          <div className="flex justify-center items-center gap-12 mb-16">
+          <div 
+            ref={companyLogosAnimation.ref}
+            className={`flex justify-center items-center gap-12 mb-16 transition-all duration-700 ${
+              companyLogosAnimation.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div className="group cursor-pointer" onClick={() => window.open("https://www.inheritancemadesimple.com/", '_blank')}>
               <img 
                 src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
@@ -161,7 +179,14 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="space-y-8">
+          <div 
+            ref={aboutSectionAnimation.ref}
+            className={`space-y-8 transition-all duration-700 delay-200 ${
+              aboutSectionAnimation.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div className="px-4 md:p-16">
               <div className="prose prose-lg prose-invert max-w-none text-center md:text-left">
                 <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">

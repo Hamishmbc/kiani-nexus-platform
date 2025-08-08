@@ -2,6 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, LucideIcon } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 interface ServiceCardProps {
   title: string;
@@ -16,6 +17,8 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, logo, logoAlt, logoSize = "normal" }: ServiceCardProps) => {
+  const animation = useScrollAnimation(0.1);
+  
   const handleClick = () => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -24,8 +27,13 @@ const ServiceCard = ({ title, description, icon: Icon, url, gradient, delay, log
 
   return (
     <Card 
-      className="group bg-card/40 border-border/30 hover:border-primary/40 backdrop-blur-xl transition-all duration-700 hover:scale-105 cursor-pointer animate-fade-in shadow-elegant hover:shadow-luxury"
-      style={{ animationDelay: delay }}
+      ref={animation.ref}
+      className={`group bg-card/40 border-border/30 hover:border-primary/40 backdrop-blur-xl transition-all duration-700 hover:scale-105 cursor-pointer shadow-elegant hover:shadow-luxury ${
+        animation.isVisible 
+          ? 'opacity-100 translate-y-0 scale-100' 
+          : 'opacity-0 translate-y-8 scale-95'
+      }`}
+      style={{ transitionDelay: animation.isVisible ? delay : '0ms' }}
       onClick={handleClick}
     >
       <CardContent className="p-10 md:p-12 relative overflow-hidden">

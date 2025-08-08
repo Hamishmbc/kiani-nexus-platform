@@ -4,10 +4,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Index = () => {
   const navigate = useNavigate();
+  const [scrollY, setScrollY] = useState(0);
   
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const handleNavigateToContact = () => {
     navigate("/contact");
@@ -55,7 +65,12 @@ const Index = () => {
           <div className="text-center flex flex-col items-center">
             {/* Premium Profile Section */}
             <div className="mb-16 relative flex justify-center">
-              <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] relative">
+              <div 
+                className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] relative"
+                style={{ 
+                  transform: `translateY(${scrollY * 0.1}px) scale(${1 + scrollY * 0.0001})` 
+                }}
+              >
                 <div className="absolute inset-0 luxury-gradient rounded-full blur-3xl opacity-20 animate-glow"></div>
                 <div className="absolute inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
                 <img 
@@ -77,7 +92,7 @@ const Index = () => {
                 />
               </div>
               
-              <p className="text-2xl md:text-3xl lg:text-4xl text-primary/90 mb-8 font-light font-['Playfair_Display']">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-primary/90 mb-8 font-light font-heading">
                 Welcome
               </p>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-16 max-w-4xl mx-auto font-light">
@@ -125,7 +140,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/10 to-transparent"></div>
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-20">
-            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-8">
+            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-8">
               <span className="text-luxury">About Sean Kiani</span>
             </h2>
             <p className="text-2xl text-primary/80 max-w-3xl mx-auto leading-relaxed font-light">
@@ -134,7 +149,12 @@ const Index = () => {
           </div>
 
           {/* Premium Company Logos */}
-          <div className="flex justify-center items-center gap-12 mb-16">
+          <div 
+            className="flex justify-center items-center gap-12 mb-16"
+            style={{ 
+              transform: `translateY(${scrollY * 0.05}px)` 
+            }}
+          >
             <div className="group cursor-pointer" onClick={() => window.open("https://www.inheritancemadesimple.com/", '_blank')}>
               <img 
                 src="/lovable-uploads/b2f11928-3c1d-42b7-b074-103d078a8208.png" 
@@ -174,7 +194,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/5 to-transparent"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-20">
-            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-8">
+            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-8">
               <span className="text-luxury">Our Services</span>
             </h2>
             <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 font-light">
@@ -199,7 +219,7 @@ const Index = () => {
               <div className="mb-6 md:mb-8">
                 <Award className="h-12 w-12 md:h-16 md:w-16 mx-auto text-primary mb-4 md:mb-6" />
               </div>
-              <h3 className="font-['Playfair_Display'] text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8 leading-tight">
+              <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8 leading-tight">
                 <span className="text-primary">Book your complimentary meeting with Sean in Mayfair, Bournemouth or online</span>
               </h3>
               <Button 

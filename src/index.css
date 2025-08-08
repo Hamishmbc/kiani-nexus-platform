@@ -9,11 +9,11 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Premium Dark Theme Base */
-    --background: 240 10% 3.9%;
+    --background: 240 5% 12%;
     --foreground: 0 0% 98%;
 
     /* Premium Cards & Surfaces */
-    --card: 240 10% 3.9%;
+    --card: 240 5% 12%;
     --card-foreground: 0 0% 98%;
 
     --popover: 240 5% 6%;
@@ -21,7 +21,7 @@ All colors MUST be HSL.
 
     /* Premium Gold & Navy Palette */
     --primary: 45 100% 85%;  /* Champagne Gold */
-    --primary-foreground: 240 10% 3.9%;
+    --primary-foreground: 240 5% 12%;
 
     --secondary: 220 70% 8%;  /* Deep Navy */
     --secondary-foreground: 0 0% 98%;
@@ -54,7 +54,7 @@ All colors MUST be HSL.
     --sidebar-background: 240 5% 6%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 45 100% 85%;
-    --sidebar-primary-foreground: 240 10% 3.9%;
+    --sidebar-primary-foreground: 240 5% 12%;
     --sidebar-accent: 240 4% 9%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 3.7% 15.9%;
@@ -63,14 +63,14 @@ All colors MUST be HSL.
 
   .dark {
     /* Same premium theme for consistency */
-    --background: 240 10% 3.9%;
+    --background: 240 5% 12%;
     --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+    --card: 240 5% 12%;
     --card-foreground: 0 0% 98%;
     --popover: 240 5% 6%;
     --popover-foreground: 0 0% 98%;
     --primary: 45 100% 85%;
-    --primary-foreground: 240 10% 3.9%;
+    --primary-foreground: 240 5% 12%;
     --secondary: 220 70% 8%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 5% 6%;
@@ -85,7 +85,7 @@ All colors MUST be HSL.
     --sidebar-background: 240 5% 6%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 45 100% 85%;
-    --sidebar-primary-foreground: 240 10% 3.9%;
+    --sidebar-primary-foreground: 240 5% 12%;
     --sidebar-accent: 240 4% 9%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 3.7% 15.9%;
@@ -105,7 +105,7 @@ All colors MUST be HSL.
 }
 
 /* Premium Typography */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
 /* Premium Animation Classes */
 @layer utilities {

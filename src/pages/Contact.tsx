@@ -91,7 +91,7 @@ const Contact = () => {
 
       <div className="container mx-auto max-w-6xl px-4 py-12 relative z-10">
         <div className="text-center mb-16">
-          <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-8">
+          <h1 className="font-heading text-5xl md:text-6xl font-bold mb-8">
             <span className="text-luxury">Get Started Today</span>
           </h1>
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
@@ -104,7 +104,7 @@ const Contact = () => {
           <div className="md:col-span-2">
             <Card className="bg-card/60 border-border/50 backdrop-blur-xl shadow-elegant">
               <CardHeader className="pb-8">
-                <CardTitle className="font-['Playfair_Display'] text-3xl text-luxury">Contact Sean Kiani</CardTitle>
+                <CardTitle className="font-heading text-3xl text-luxury">Contact Sean Kiani</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-8">
@@ -213,7 +213,7 @@ const Contact = () => {
           <div className="space-y-8">
             <Card className="bg-card/60 border-border/50 backdrop-blur-xl shadow-elegant">
               <CardHeader>
-                <CardTitle className="font-['Playfair_Display'] text-2xl text-luxury">Contact Information</CardTitle>
+                <CardTitle className="font-heading text-2xl text-luxury">Contact Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-center space-x-4">

@@ -105,7 +105,7 @@ const Index = () => {
                 Welcome
               </p>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-16 max-w-4xl mx-auto font-light">
-                Best-of-breed and tailored financial advisory solutions for Baby Boomers. We seamlessly integrate independent FCA-authorised financial advice and strategic estate planning to optimise and safeguard your wealth across the entire financial ecosystem.
+                Tailored financial advisory solutions for the discerning investor. We integrate independent, FCA-authorised advice with strategic estate planning to empower, optimise, and safeguard your legacy for a prosperous future.
               </p>
               
               {/* Premium Feature Highlights */}
@@ -135,7 +135,7 @@ const Index = () => {
                   <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-glow">
                     <Gem className="h-10 w-10 text-primary" />
                   </div>
-                  <p className="text-lg font-semibold text-primary mb-2">Wealth Optimization</p>
+                  <p className="text-lg font-semibold text-primary mb-2">Wealth Optimisation</p>
                   <p className="text-sm text-muted-foreground">Tailored strategies</p>
                 </div>
               </div>
@@ -200,7 +200,7 @@ const Index = () => {
             <div className="px-4 md:p-16">
               <div className="prose prose-lg prose-invert max-w-none text-center md:text-left">
                 <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
-                  Sean brings a unique perspective to financial advisory for Baby Boomers, drawing from over two decades of successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, and strategic restructuring. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
+                  Sean brings a unique perspective to financial advisory for the discerning investor, drawing from over two decades of experience successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, and strategic restructuring. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
                 </p>
                 <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
                   With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.

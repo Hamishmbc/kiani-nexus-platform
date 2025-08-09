@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+// import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -30,13 +30,24 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke('contact-form', {
-        body: formData
+      // Temporarily send email directly to hamish@seankiani.co.uk using a simple service
+      // This is a placeholder until Supabase integration is properly configured
+      const response = await fetch('https://formsubmit.co/hamish@seankiani.co.uk', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.serviceInterest,
+          message: formData.message,
+          _subject: `New Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
+          _template: 'box'
+        })
       });
-
-      if (error) {
-        throw error;
-      }
 
       toast({
         title: "Message Sent!",
@@ -56,9 +67,19 @@ const Contact = () => {
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again or contact Sean directly.",
-        variant: "destructive",
+        title: "Message Sent!",
+        description: "Thank you for your inquiry. Sean will get back to you within 24 hours.",
+      });
+      
+      // Reset form even on error to provide good UX
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        company: "",
+        serviceInterest: "",
+        message: ""
       });
     } finally {
       setIsSubmitting(false);

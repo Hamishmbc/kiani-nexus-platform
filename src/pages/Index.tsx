@@ -11,8 +11,11 @@ const Index = () => {
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
   const heroImageAnimation = useScrollAnimation(0.2);
+  const featureHighlightsAnimation = useScrollAnimation(0.1);
   const companyLogosAnimation = useScrollAnimation(0.2);
   const aboutSectionAnimation = useScrollAnimation(0.1);
+  const servicesHeaderAnimation = useScrollAnimation(0.1);
+  const ctaSectionAnimation = useScrollAnimation(0.1);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -106,7 +109,14 @@ const Index = () => {
               </p>
               
               {/* Premium Feature Highlights */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div 
+                ref={featureHighlightsAnimation.ref}
+                className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto transition-all duration-700 ${
+                  featureHighlightsAnimation.isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+              >
                 <div className="text-center group">
                   <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-glow">
                     <Crown className="h-10 w-10 text-primary" />
@@ -208,7 +218,14 @@ const Index = () => {
       <section className="py-32 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/5 to-transparent"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="text-center mb-20">
+          <div 
+            ref={servicesHeaderAnimation.ref}
+            className={`text-center mb-20 transition-all duration-700 ${
+              servicesHeaderAnimation.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <h2 className="font-heading text-5xl md:text-6xl font-bold mb-8">
               <span className="text-luxury">Our Services</span>
             </h2>
@@ -227,7 +244,14 @@ const Index = () => {
 
       {/* Premium CTA Section */}
       <section className="py-16 md:py-32 px-4">
-        <div className="container mx-auto max-w-5xl text-center">
+        <div 
+          ref={ctaSectionAnimation.ref}
+          className={`container mx-auto max-w-5xl text-center transition-all duration-700 ${
+            ctaSectionAnimation.isVisible 
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 translate-y-8'
+          }`}
+        >
           <Card className="bg-secondary border-primary/20 backdrop-blur-xl shadow-luxury relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
             <CardContent className="p-6 md:p-16 lg:p-20 relative z-10">

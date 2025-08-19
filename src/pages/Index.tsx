@@ -128,7 +128,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Independent FCA regulation</p>
                 </div>
                 <div className="text-center group">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-glow">
+                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-glow">
                     <Shield className="h-10 w-10 text-accent" />
                   </div>
                   <p className="text-lg font-semibold text-primary mb-2">Estate Planning</p>

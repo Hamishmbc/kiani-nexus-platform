@@ -200,10 +200,10 @@ const Index = () => {
             <div className="px-4 md:p-16">
               <div className="prose prose-lg prose-invert max-w-none text-center md:text-left">
                 <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
-                  Sean brings a unique perspective to financial advisory for the discerning investor, drawing from over two decades of experience successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, and strategic restructuring. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
+                  Sean brings a unique perspective to financial advisory, drawing from over two decades of experience successfully guiding individuals and business owners through the complexities of wealth management, asset protection, estate planning, and strategic restructuring. This extensive experience positions him exceptionally well to support those in their prime earning and retirement years, navigating the full spectrum of financial challenges and opportunities.
                 </p>
                 <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed mb-8 font-light">
-                  With a client-centered approach, Sean delivers independent and regulated financial advice and wealth management through Peregrine and Black, a prestigious firm based in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
+                  With a client-centred approach, Sean delivers independent and regulated financial advice and wealth management from offices in Mayfair, London. His estate planning products and services are provided through Inheritance Made Simple, a boutique estate planning agency located in Bournemouth.
                 </p>
                 <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed font-light">
                   Sean's expertise ensures personalised strategies tailored to your distinctive needs, from optimising wealth growth to safeguarding legacies for future generations. Passionate about simplifying finance, Sean is dedicated to building enduring relationships founded on trust, transparency, and meaningful outcomes.
@@ -259,7 +259,7 @@ const Index = () => {
                 <Award className="h-12 w-12 md:h-16 md:w-16 mx-auto text-primary mb-4 md:mb-6" />
               </div>
               <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8 leading-tight">
-                <span className="text-primary">Book your complimentary meeting with Sean in Mayfair, Bournemouth or online</span>
+                <span className="text-primary">Book your complimentary meeting with Sean in Mayfair London, Bournemouth or online</span>
               </h3>
               <Button 
                 size="lg" 

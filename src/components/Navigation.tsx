@@ -65,7 +65,7 @@ const Navigation = () => {
                     "relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300",
                     "hover:bg-primary/10 hover:text-primary",
                     "before:absolute before:inset-x-0 before:bottom-0 before:h-0.5",
-                    "before:bg-gradient-to-r before:from-primary before:to-accent",
+                    "before:bg-primary",
                     "before:transform before:scale-x-0 before:transition-transform before:duration-300",
                     "hover:before:scale-x-100",
                     isActive(item.href)
@@ -83,7 +83,7 @@ const Navigation = () => {
               <Button
                 asChild
                 size="sm"
-                className="bg-gradient-to-r from-primary to-accent hover:shadow-glow text-secondary border border-primary/20 transition-all duration-300 hover:scale-105"
+                className="bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary border border-primary/20 transition-all duration-300 hover:scale-105"
               >
                 <Link to="/contact">Book Meeting</Link>
               </Button>
@@ -134,7 +134,7 @@ const Navigation = () => {
                 <div className="pt-4 border-t border-primary/10">
                   <Button
                     asChild
-                    className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-glow text-secondary transition-all duration-300"
+                    className="w-full bg-primary hover:bg-primary/90 hover:shadow-glow text-secondary transition-all duration-300"
                   >
                     <Link to="/contact">Book Your Meeting</Link>
                   </Button>

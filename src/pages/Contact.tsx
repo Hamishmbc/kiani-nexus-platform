@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import Navigation from "@/components/Navigation";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -91,6 +92,8 @@ const Contact = () => {
   };
 
   return (
+    <>
+      <Navigation />
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Premium Background Elements */}
       <div className="absolute inset-0">
@@ -308,6 +311,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

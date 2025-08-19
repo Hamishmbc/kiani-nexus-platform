@@ -1,12 +1,15 @@
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation";
 import { useNavigate } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-background py-16 px-4">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-background py-16 px-4 pt-24">
       <div className="container mx-auto max-w-4xl">
         <div className="mb-8">
           <Button
@@ -135,6 +138,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import { ArrowRight, TrendingUp, Shield, Crown, Gem, Award } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
+import Navigation from "@/components/Navigation";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
@@ -57,6 +58,8 @@ const Index = () => {
   ];
 
   return (
+    <>
+      <Navigation />
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Premium Background Elements */}
       <div className="absolute inset-0">
@@ -67,7 +70,7 @@ const Index = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4">
+      <section className="relative min-h-screen flex items-center justify-center px-4 pt-20">
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center flex flex-col items-center">
             {/* Premium Profile Section */}
@@ -277,6 +280,7 @@ const Index = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
